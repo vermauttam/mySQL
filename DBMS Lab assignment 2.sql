@@ -1,0 +1,37 @@
+CREATE DATABASE LibraryDB;
+
+USE LibraryDB;
+
+CREATE TABLE Books( 
+Book_ID INT PRIMARY KEY,
+Title VARCHAR(200),
+Author VARCHAR(100),
+Published_Date Date,
+ISBN VARCHAR(13)
+);
+
+SELECT * FROM Books;
+
+ALTER TABLE Books
+ADD COLUMN Genre VARCHAR(50);
+
+ALTER TABLE Books
+MODIFY ISBN VARCHAR(20);
+
+ALTER TABLE Books
+DROP COLUMN Published_Date;
+
+DROP TABLE Books;
+
+
+
+
+
+
+
+
+
+
+
+
+
